@@ -3,7 +3,7 @@ var koa = require('koa'),
     router = require('koa-router'),
     logger = require('koa-logger'),
     koaBody = require('koa-body'),
-    app, server;
+    app;
 
 app = koa();
 
