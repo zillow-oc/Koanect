@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/zillow-oc/Koanect.svg?branch=master)](https://travis-ci.org/zillow-oc/Koanect)
+
 Koanect
 =======
 
