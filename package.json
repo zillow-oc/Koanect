@@ -20,6 +20,7 @@
     "chai": "^1.9.2",
     "gulp-mocha": "^1.1.1",
     "gulp-nodemon": "^1.0.4",
+    "istanbul": "^0.3.2",
     "mocha": "^1.21.5",
     "nodemon": "^1.2.1",
     "supertest": "^0.14.0"
