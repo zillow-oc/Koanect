@@ -1,5 +1,6 @@
-require('./lib/logger.js');
-
+if(process.env.NODE_ENV !== 'test'){
+  require('./logger.js');
+}
 var koa = require('koa'),
     mount = require('koa-mount'),
     router = require('koa-router'),
@@ -10,5 +11,5 @@ var koa = require('koa'),
 (function(){
   var app = require('./index.js')
 
-  server = app.listen(8080);
+  module.exports = app.listen(3000);
 })();

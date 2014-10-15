@@ -1,3 +1,4 @@
+'use strict';
 //middleware to add controllers
 var Router = require('koa-router');
 var router = new Router();

@@ -1,6 +1,7 @@
+require('./lib/logger.js');
+
 var gulp = require('gulp')
   , nodemon = require('gulp-nodemon');
-
 
 
 gulp.task('dev', function () {

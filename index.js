@@ -1,7 +1,3 @@
-/**
-  The entry point.
-  @module RulesService
-**/
 var koa = require('koa'),
     mount = require('koa-mount'),
     router = require('koa-router'),
@@ -11,7 +7,9 @@ var koa = require('koa'),
 
 app = koa();
 
-app.use(logger());
+if(process.env.NODE_ENV !== 'test'){  
+  app.use(logger());
+}
 app.use(koaBody());
 app.use(router(app));
 app.use(mount('/', require('./controllers/default.js').middleware()));
