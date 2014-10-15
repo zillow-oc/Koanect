@@ -50,7 +50,7 @@ koanect apps you'd like to run via this server.
   //my included koanect app
   app.use(mount('/', require('myPackagedApp')));
 
-  server = app.listen(8080);
+  server = app.listen(3000);
 ```
 
 ##Development
@@ -62,7 +62,7 @@ in your terminal:
 `npm start`
 
 
-Navigate to your "localhost:8080" and you should be greeted.
+Navigate to your "localhost:3000" and you should be greeted.
 
 For development gulp and nodemon are included so you don't have to restart
 your server for every change, yay!  Shut down your server and input in your terminal:
