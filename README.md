@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/zillow-oc/Koanect.svg?branch=master)](https://travis-ci.org/zillow-oc/Koanect
+[![Build Status](https://travis-ci.org/zillow-oc/Koanect.svg?branch=master)](https://travis-ci.org/zillow-oc/Koanect)
 [![Test Coverage](https://codeclimate.com/github/zillow-oc/Koanect/badges/coverage.svg)](https://codeclimate.com/github/zillow-oc/Koanect)
 [![Code Climate](https://codeclimate.com/github/zillow-oc/Koanect/badges/gpa.svg)](https://codeclimate.com/github/zillow-oc/Koanect)
 Koanect
