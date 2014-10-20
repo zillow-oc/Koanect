@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "chai": "^1.9.2",
+    "codeclimate-test-reporter": "0.0.4",
     "gulp-nodemon": "^1.0.4",
     "gulp-spawn-mocha": "^0.4.1",
     "istanbul": "^0.3.2",
@@ -30,7 +31,8 @@
     "test": "node --harmony `which gulp` test",
     "dev": "node --harmony `which gulp` dev",
     "cover": "node --harmony `which gulp` cover",
-    "start": "node --harmony `which gulp`"
+    "start": "node --harmony `which gulp`",
+    "send-cover": "CODECLIMATE_REPO_TOKEN=143ac20ce7ed3319999f4a918aaa3146a66e8731132048cf29b96423c34994f1 `which codeclimate` < coverage/lcov.info"
   },
   "engines": {
     "node": ">=0.11.14"

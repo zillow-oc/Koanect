@@ -1,9 +1,9 @@
-var mocha = require('gulp-spawn-mocha');
+
 
 require('./lib/logger.js');
-
 var gulp = require('gulp'),
-    nodemon = require('gulp-nodemon');
+    nodemon = require('gulp-nodemon'),
+    mocha = require('gulp-spawn-mocha');
 
 
 gulp.task('dev', function () {
@@ -29,7 +29,6 @@ gulp.task('cover', function(){
     throw e;
   });
 });
-
 
 gulp.task('default', function() {
   require('./server.js');
