@@ -7,6 +7,7 @@ var koa = require('koa'),
 
 app = koa();
 
+/* istanbul ignore if  */
 if(process.env.NODE_ENV !== 'test'){  
   app.use(logger());
 }

@@ -71,7 +71,16 @@ Navigate to your "localhost:3000" and you should be greeted.
 For development gulp and nodemon are included so you don't have to restart
 your server for every change, yay!  Shut down your server and input in your terminal:
 
-`gulp dev`
+`npm run-script dev`
+
+
+Run tests:
+
+`npm test`
+
+Test Coverage:
+
+`npm run-script cover`
 
 
 ##Additional Features/Tools

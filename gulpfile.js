@@ -1,3 +1,5 @@
+var mocha = require('gulp-spawn-mocha');
+
 require('./lib/logger.js');
 
 var gulp = require('gulp'),
@@ -16,10 +18,30 @@ gulp.task('dev', function () {
   });
 });
 
-gulp.task('test'. function(){
-
+gulp.task('test', function(){
+  return test().on('error', function (e) {
+    throw e;
+  });
 });
+
+gulp.task('cover', function(){
+  return test(true).on('error', function (e) {
+    throw e;
+  });
+});
+
 
 gulp.task('default', function() {
-  console.log('gulping');
+  require('./server.js');
 });
+
+function test(cover){
+  return gulp.src(['test/*.test.js'], {read: false})
+    .pipe(mocha({
+      R: 'spec',
+      c: true,
+      harmony: true,
+      env: {'NODE_ENV': 'test'},
+      istanbul: cover
+  })).on('error', console.warn.bind(console));
+}

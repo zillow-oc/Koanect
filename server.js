@@ -1,9 +1,10 @@
+/* istanbul ignore if  */
 if(process.env.NODE_ENV !== 'test'){
-  require('./logger.js');
+  require('./lib/logger.js');
 }
 
 (function(){
-  var app = require('..');
+  var app = require('./');
 
   module.exports = app.listen(3000);
 })();

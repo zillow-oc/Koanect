@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "chai": "^1.9.2",
-    "gulp-mocha": "^1.1.1",
     "gulp-nodemon": "^1.0.4",
+    "gulp-spawn-mocha": "^0.4.1",
     "istanbul": "^0.3.2",
     "mocha": "^1.21.5",
     "nodemon": "^1.2.1",
@@ -27,8 +27,10 @@
   },
   "main": "index",
   "scripts": {
-    "test": "make all",
-    "start": "node --harmony server.js"
+    "test": "node --harmony `which gulp` test",
+    "dev": "node --harmony `which gulp` dev",
+    "cover": "node --harmony `which gulp` cover",
+    "start": "node --harmony `which gulp`"
   },
   "engines": {
     "node": ">=0.11.14"
