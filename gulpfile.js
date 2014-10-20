@@ -16,6 +16,10 @@ gulp.task('dev', function () {
   });
 });
 
+gulp.task('test'. function(){
+
+});
+
 gulp.task('default', function() {
   console.log('gulping');
 });
