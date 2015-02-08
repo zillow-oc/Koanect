@@ -1,6 +1,6 @@
 
 
-require('./lib/logger.js');
+require('sawyer')();
 var gulp = require('gulp'),
     nodemon = require('gulp-nodemon'),
     mocha = require('gulp-spawn-mocha');
