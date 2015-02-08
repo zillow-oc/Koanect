@@ -3,7 +3,7 @@ script:
 
 language: node_js
 
-node_js: "0.11.14"
+node_js: "0.12.0"
 
 cache:
   directories:
@@ -11,7 +11,7 @@ cache:
 matrix:
   fast_finish: true
   include:
-    - node_js: "0.11"
+    - node_js: "0.12"
       env: COVERAGE=true
 
   allow_failures:
